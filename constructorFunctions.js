@@ -39,7 +39,7 @@ Course.prototype.courseInfo = function(){
     console.log( 'Course: ' + this.courseName +
         ' | Instructor: ' + this.instructor +
         ' | Credit Hours: ' + this.creditHours);
-    };
+    
 
     // loop through the assignments array and print each assignment
 console.log('Assignments >>>');
@@ -47,6 +47,7 @@ console.log('Assignments >>>');
     for (let a of this.assignments) {
         a.printAssignment();
     }
+};
 };
 
 
@@ -90,4 +91,5 @@ let c2 = new Course(
 
 c1.courseInfo();
 c2.courseInfo();
+
 
